@@ -1,11 +1,6 @@
-'use server'
+export { createComment } from './create-comment'
+export { createPost } from './create-post'
+export { createTopic } from './create-topic'
 
-import * as auth from '@/auth'
-
-export const signIn = async () => {
-  return auth.signIn('github')
-}
-
-export const signOut = async () => {
-  return auth.signOut()
-}
+export { signIn } from './sign-in'
+export { signOut } from './sign-out'
