@@ -41,6 +41,7 @@ export const createTopic = async (
   }
 
   const session = await auth()
+
   if (!session || !session.user) {
     return {
       errors: {
