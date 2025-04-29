@@ -91,5 +91,6 @@ export const createPost = async (
   }
 
   revalidatePath(paths.topicShow(slug))
+  revalidatePath('/')
   redirect(paths.postShow(slug, post.id))
 }
